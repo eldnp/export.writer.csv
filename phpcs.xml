@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ruleset name="Eldorado coding standard">
+    <rule ref="./vendor/zendframework/zend-coding-standard/ruleset.xml">
+        <exclude name="Generic.Arrays.DisallowLongArraySyntax"/>
+        <exclude name="Generic.Formatting.SpaceAfterNot"/>
+    </rule>
+    <file>lib</file>
+</ruleset>
