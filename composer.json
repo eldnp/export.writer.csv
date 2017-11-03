@@ -1,0 +1,48 @@
+{
+    "name": "eldnp/export.writer.csv",
+    "type": "library",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Oleg Verevskoy",
+            "email": "verevskoy@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev",
+            "dev-develop": "0.2-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Eldnp\\Export\\Writer\\Csv\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EldnpTest\\Export\\Writer\\Csv\\": "test/"
+        }
+    },
+    "require": {
+        "php": "^5.3",
+        "eldnp/export.map": "^0.1",
+        "ext-pdo": "*"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "^4.8",
+        "zendframework/zend-coding-standard": "~1.0.0"
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "upload-coverage": "coveralls -v",
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --coverage-clover clover.xml"
+    }
+}
